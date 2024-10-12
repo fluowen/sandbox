@@ -1,5 +1,3 @@
-// Custom JavaScript
-
 // Inicializa o carrossel com intervalo de 3 segundos
 document.addEventListener('DOMContentLoaded', function() {
     const carouselElement = document.querySelector('#carouselExampleCaptions');
