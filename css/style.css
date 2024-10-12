@@ -1,15 +1,21 @@
+/* Definições de fonte */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F0F0F2;
     color: #395873;
 }
 
-h1, h3 {
+h1, h3, h5 {
     font-weight: 600;
 }
 
 p {
     font-weight: 400;
+}
+
+/* Estilo para a Navbar */
+.navbar {
+    background-color: #274073;
 }
 
 .navbar .nav-link {
@@ -21,14 +27,58 @@ p {
     color: #D96704 !important;
 }
 
-#overview {
-    color: #274073;
+/* Estilo para o Carrossel */
+.carousel-section {
+    padding: 5rem 0;
 }
 
-#offers {
-    background-color: #395873;
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
+.carousel-caption {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: left;
+}
+
+.carousel-caption h5, .carousel-caption p {
+    color: white;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1);
+}
+
+/* Footer */
 footer {
     background-color: #D96704;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* Definir tamanho fixo para o carrossel */
+.carousel {
+    width: 100%; /* Largura máxima */
+    max-width: 1200px; /* Largura máxima do carrossel */
+    height: 500px; /* Altura fixa para o carrossel */
+    margin: 0 auto; /* Centralizar o carrossel */
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+    object-position: center; /* Centraliza a imagem */
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .carousel {
+        height: 300px; /* Ajuste para dispositivos móveis */
+    }
 }
