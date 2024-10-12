@@ -49,14 +49,14 @@ p {
 }
 
 .carousel-caption h5, .carousel-caption p {
-    color: white;
+    color: #D96704;
     object-position: left;
     object-position: bottom;
 }
 
 .carousel-control-prev, .carousel-control-next {
     filter: invert(1);
-     color: #D96704;
+    color: #D96704;
 }
 
 /* Responsividade para dispositivos menores */
