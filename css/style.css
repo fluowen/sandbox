@@ -1,0 +1,34 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0F0F2;
+    color: #395873;
+}
+
+h1, h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+.navbar .nav-link {
+    font-weight: 400;
+    color: #F0F0F2 !important;
+}
+
+.navbar .nav-link:hover {
+    color: #D96704 !important;
+}
+
+#overview {
+    color: #274073;
+}
+
+#offers {
+    background-color: #395873;
+}
+
+footer {
+    background-color: #D96704;
+}
