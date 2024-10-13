@@ -1,30 +1,65 @@
-#carouselOverview {
-    width: 80vw;  /* 80% da largura da janela do navegador */
-    height: 64vh; /* 64% da altura da janela do navegador */
-    margin: auto; /* Centraliza horizontalmente */
-}
-
+/* Estilos personalizados para garantir que o layout seja responsivo */
 .carousel-inner img {
-    width: 100%;  /* Garante que as imagens ocupem toda a largura do carousel */
-    height: 100%; /* Garante que as imagens ocupem toda a altura do carousel */
-    object-fit: cover; /* Ajusta as imagens para preencher o container sem distorção */
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que as imagens preencham o espaço sem distorção */
 }
 
 .carousel-caption {
-    color: black; /* Cor do texto */
-    text-align: left; /* Alinha o texto à esquerda */
-    bottom: 0; /* Posiciona o texto na base da imagem */
-    left: 0; /* Certifica que o texto esteja alinhado à esquerda */
-    padding-left: 20px; /* Adiciona espaçamento do lado esquerdo */
-    padding-right: 20px; /* Espaçamento à direita para evitar bordas cortadas */
-    background: rgba(255, 255, 255, 0.6); /* Adiciona um fundo branco semitransparente para melhor legibilidade */
-    width: 100%; /* Garante que a largura seja 100% */
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente */
+    color: #fff; /* Texto branco */
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
 }
 
-.carousel-control-prev-icon {
-    background-color: blueviolet;
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Reduz o tamanho dos controles para evitar sobreposição */
 }
 
-.carousel-control-next-icon {
-    background-color: blueviolet;
+/* Ajustes de responsividade para telas menores */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.75rem;
+    }
+
+    .navbar-brand img {
+        width: 20px; /* Reduz a logo para telas pequenas */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte do menu em telas menores */
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%; /* Aumenta o tamanho dos botões de controle em dispositivos menores */
+    }
 }
