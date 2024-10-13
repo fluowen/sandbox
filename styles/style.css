@@ -10,9 +10,14 @@
     object-fit: cover; /* Ajusta as imagens para preencher o container sem distorção */
 }
 
-.carousel-control-prev-icon {
-    color: blueviolet;
+.carousel-inner h5 p {
+    color: black;
 }
-carousel-control-next {
-    color: blueviolet;
+
+.carousel-control-prev-icon {
+    background-color: blueviolet;
+}
+
+.carousel-control-next-icon {
+    background-color: blueviolet;
 }
