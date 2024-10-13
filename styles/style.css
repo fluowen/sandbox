@@ -10,8 +10,10 @@
     object-fit: cover; /* Ajusta as imagens para preencher o container sem distorção */
 }
 
-.carousel-inner h5 p {
-    color: black;
+.carousel-item h5 p {
+    background-color: #A2A2A2;
+    text-align: left;
+    font-palette: #000;
 }
 
 .carousel-control-prev-icon {
