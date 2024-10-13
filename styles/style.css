@@ -1,10 +1,18 @@
 /* Estilos personalizados para garantir que o layout seja responsivo */
 .carousel-inner img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover; /* Garante que as imagens preencham o espaço sem distorção */
 }
 
+/* Limite de 80% da largura e altura da tela */
+#carouselOverview {
+    max-width: 72vw;  /* 80% da largura da tela */
+    max-height: 72vh; /* 80% da altura da tela */
+    margin: auto;     /* Centraliza o carrossel na tela */
+}
+
+/* Legendas do carrossel */
 .carousel-caption {
     position: absolute;
     bottom: 20px;
@@ -17,6 +25,7 @@
     border-radius: 5px;
 }
 
+/* Controles do carrossel */
 .carousel-control-prev, .carousel-control-next {
     width: 5%; /* Reduz o tamanho dos controles para evitar sobreposição */
 }
