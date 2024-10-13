@@ -26,7 +26,7 @@
     display: block;
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo verticalmente */
-    justify-content: left; /* Centraliza o conteúdo dentro do container */
+    justify-content: center; /* Centraliza o conteúdo dentro do container */
     width: 100%;
     height: 150px; /* Altura fixa para todos os captions */
 }
