@@ -21,7 +21,7 @@
     background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para melhorar a visibilidade */
     color: #fff;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
