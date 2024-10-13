@@ -1,7 +1,7 @@
 /* Limitar o carrossel a 72% da largura e altura da tela */
 #carouselOverview {
-    max-width: 72vw;
-    max-height: 72vh;
+    max-width: 96vw;
+    max-height: 96vh;
     margin: auto;
 }
 
