@@ -1,37 +1,39 @@
-/* Estilos personalizados para garantir que o layout seja responsivo */
+/* Limitar o carrossel a 80% da largura e altura da tela */
+#carouselOverview {
+    max-width: 72vw;
+    max-height: 72vh;
+    margin: auto;
+}
+
+/* Estilos para imagens do carrossel */
 .carousel-inner img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Garante que as imagens preencham o espaço sem distorção */
+    height: auto;
+    object-fit: cover; /* Mantém a proporção das imagens sem distorção */
 }
 
-/* Limite de 80% da largura e altura da tela */
-#carouselOverview {
-    max-width: 72vw;  /* 80% da largura da tela */
-    max-height: 72vh; /* 80% da altura da tela */
-    margin: auto;     /* Centraliza o carrossel na tela */
-}
-
-/* Legendas do carrossel */
+/* Ajustes para legendas (captions) do carrossel */
 .carousel-caption {
     position: absolute;
     bottom: 20px;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente */
-    color: #fff; /* Texto branco */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para melhorar a visibilidade */
+    color: #fff;
     padding: 10px;
     text-align: left;
     border-radius: 5px;
 }
 
-/* Controles do carrossel */
-.carousel-control-prev, .carousel-control-next {
-    width: 5%; /* Reduz o tamanho dos controles para evitar sobreposição */
-}
-
-/* Ajustes de responsividade para telas menores */
+/* Ajustes para dispositivos médios */
 @media (max-width: 768px) {
+    /* Manter as imagens visíveis */
+    .carousel-inner img {
+        object-fit: contain; /* Garante que a imagem seja totalmente visível */
+        height: auto; /* Mantém a altura flexível */
+    }
+
+    /* Ajustes nas legendas */
     .carousel-caption {
         font-size: 0.9rem;
         padding: 8px;
@@ -46,7 +48,15 @@
     }
 }
 
+/* Ajustes para dispositivos pequenos */
 @media (max-width: 576px) {
+    /* Ajustar a exibição das imagens */
+    .carousel-inner img {
+        object-fit: contain; /* Garante que a imagem não seja cortada em telas pequenas */
+        height: auto;
+    }
+
+    /* Ajustes nas legendas para serem visíveis */
     .carousel-caption {
         font-size: 0.8rem;
         padding: 5px;
@@ -60,15 +70,18 @@
         font-size: 0.75rem;
     }
 
+    /* Ajuste no tamanho da logo */
     .navbar-brand img {
-        width: 20px; /* Reduz a logo para telas pequenas */
+        width: 20px;
     }
 
+    /* Ajuste no tamanho do menu */
     .navbar-nav .nav-link {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte do menu em telas menores */
+        font-size: 0.9rem;
     }
 
+    /* Ajuste no tamanho dos controles de navegação do carrossel */
     .carousel-control-prev, .carousel-control-next {
-        width: 10%; /* Aumenta o tamanho dos botões de controle em dispositivos menores */
+        width: 10%;
     }
 }
