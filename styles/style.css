@@ -1,0 +1,11 @@
+#carouselOverview {
+    width: 80vw;  /* 80% da largura da janela do navegador */
+    height: 64vh; /* 64% da altura da janela do navegador */
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+.carousel-inner img {
+    width: 100%;  /* Garante que as imagens ocupem toda a largura do carousel */
+    height: 100%; /* Garante que as imagens ocupem toda a altura do carousel */
+    object-fit: cover; /* Ajusta as imagens para preencher o container sem distorção */
+}
