@@ -1,4 +1,4 @@
-/* Limitar o carrossel a 80% da largura e altura da tela */
+/* Limitar o carrossel a 72% da largura e altura da tela */
 #carouselOverview {
     max-width: 72vw;
     max-height: 72vh;
@@ -23,17 +23,16 @@
     padding: 10px;
     text-align: left;
     border-radius: 5px;
+    display: block !important; /* Garante que as legendas apareçam */
 }
 
 /* Ajustes para dispositivos médios */
 @media (max-width: 768px) {
-    /* Manter as imagens visíveis */
     .carousel-inner img {
         object-fit: contain; /* Garante que a imagem seja totalmente visível */
         height: auto; /* Mantém a altura flexível */
     }
 
-    /* Ajustes nas legendas */
     .carousel-caption {
         font-size: 0.9rem;
         padding: 8px;
@@ -50,13 +49,11 @@
 
 /* Ajustes para dispositivos pequenos */
 @media (max-width: 576px) {
-    /* Ajustar a exibição das imagens */
     .carousel-inner img {
         object-fit: contain; /* Garante que a imagem não seja cortada em telas pequenas */
         height: auto;
     }
 
-    /* Ajustes nas legendas para serem visíveis */
     .carousel-caption {
         font-size: 0.8rem;
         padding: 5px;
