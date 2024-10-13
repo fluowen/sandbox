@@ -10,9 +10,15 @@
     object-fit: cover; /* Ajusta as imagens para preencher o container sem distorção */
 }
 
-.carousel-caption h5 p {
-    background-color: #A2A2A2;
-    text-align: left;
+.carousel-caption {
+    color: black; /* Cor do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    bottom: 0; /* Posiciona o texto na base da imagem */
+    left: 0; /* Certifica que o texto esteja alinhado à esquerda */
+    padding-left: 20px; /* Adiciona espaçamento do lado esquerdo */
+    padding-right: 20px; /* Espaçamento à direita para evitar bordas cortadas */
+    background: rgba(255, 255, 255, 0.6); /* Adiciona um fundo branco semitransparente para melhor legibilidade */
+    width: 100%; /* Garante que a largura seja 100% */
 }
 
 .carousel-control-prev-icon {
