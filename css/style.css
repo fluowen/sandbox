@@ -1,4 +1,5 @@
-.carousel-inner {
+.Overview {
     width: 72vw; /* 90% da largura */
     height: 72vh; /* 90% da altura */
+    position: absolute;
 }
