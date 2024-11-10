@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div id="header-placeholder"></div>
+    <div id="contact-placeholder"></div>
+
     <h1>Fluowen</h1>
     <p class="lead">A Fluowen é uma empresa de tecnologia que ajuda empresas no processo de
         Transformação Digital, através de uma
@@ -201,4 +204,21 @@
         </li>
     </ul>
     </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Função para carregar componentes HTML
+        function loadComponent(id, url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+        // Carregar Header e Footer
+        loadComponent('header-placeholder', 'components/header.html');
+        loadComponent('contact-placeholder', 'components/contact.html');
+        loadComponent('footer-placeholder', 'components/footer.html');
+    </script>
 </body
